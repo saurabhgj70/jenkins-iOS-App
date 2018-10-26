@@ -20,5 +20,6 @@ platform :ios do
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
      puts("another project")
+  scan( workspace: "iOS-Jenkins.xcworkspace",scheme: "iOS-Jenkins-TestUi",devices: ["iPhone 8 Plus"])
   end
 end
